@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarageV.Parrot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <script src="https://cdn.tiny.cloud/1/your-api-key/tinymce/5/tinymce.min.js"></script>
+</head>
+<body>
+
+   <!--responsive avec le framework bootstrap-->
+
+   <div class="container text-center">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col-12"></div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+
+    <!--header-->
+
+    <header>
+        <div class="logo">
+          <a href="#home">
+            <p>GarageV.Parrot</p>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#cars">Vehicules</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#review-section">Avis</a></li>
+        </ul>
+       <a href="connexion.php" class="login-button">S'identiefier</a>
+    </header>
+
+    <!--section acceuil-->
+    
+    <section id="home">
+        <div class="left">
+            <h1>ACHETEZ <span>VOTRE VEHICULE</span> EN OCCASION ET <span>BéNéFICEZ</span> DE NOS SERVICES</h1>
+            <a href="#cars">ACHETEZ MAINTENANT</a>
+        </div>
+        <div class="right">
+            <img src="garage.jpg">
+        </div>
+    </section>
+
+    <!--section vehicule-->
+    
+    <section id="cars">
+    <h1 class="section_title"> Nos Vehicules</h1>
+ 
+    <div class="filters-container">
+    <div class="range"> <!--filtrer-->
+      <h3>Prix</h3>
+      <div class="slidervalue">
+        <span>7000</span>
+      </div>
+      <div class="field"> 
+        <input type="range" min="500" max="9000" value="7000" steps="1">
+      </div>
+    </div>
+    <div class="range">
+      <h3>Année</h3>
+      <div class="slidervalue">
+        <span>2006</span>
+      </div>
+      <div class="field">    
+        <input type="range" min="2000" max="2015" value="2006" steps="1">
+      </div>
+    </div>
+    <div class="range">
+      <h3>Kilométre</h3>
+      <div class="slidervalue">
+        <span>18000</span>
+      </div>
+      <div class="field">
+        <input type="range" min="50000" max="250000" value="180000" steps="1">
+      </div>
+    </div>
+  </div>
+ 
+<div class="car-container"> <!-- affichage vehicules-->
+   <div class="car-display">
+       <div class="vehicule-details">
+        <h2>la marque et le modèle</h2>
+        <img src="image-pricipale.jpg" alt="Nom du véhicule">
+        <div class="info">
+          <h4>00000€</h4>
+          <p>année de mise en circulation :<span> 20xx</span></p>
+          <p>Kilométrage :<span> XX,XXX km</span></p>
+        </div>
+       </div>
+       <div class="image-gallery">
+         <img src="image1.jpg" alt="image 1">
+         <img src="image2.jpg" alt="image 2">
+       </div>
+       <div class="description">
+        <h2>description du vehicule</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, accusantium veritatis? Nemo fugit libero expedita tempore velit et vitae alias laborum, iusto modi magni cum, ipsum laudantium quod enim officia.</p>
+       </div>
+       <ul class="features">
+        <li>équipement 1</li>
+        <li>équipement 2</li> 
+       </ul>
+       <a href="#contact">Contactez-nous</a>
+      </div>  
+       <div class="car-display">
+        <div class="vehicule-details">
+         <h2>la marque et le modèle</h2>
+         <img src="image-pricipale.jpg" alt="Nom du véhicule">
+         <div class="info">
+           <h4>00000€</h4>
+           <p>année de mise en circulation :<span> 20xx</span></p>
+           <p>Kilométrage :<span> XX,XXX km</span></p>
+         </div>
+        </div>
+        <div class="image-gallery">
+        <img src="image-pricipale.jpg" alt="image1">
+        <img src="image-pricipale.jpg" alt="image2">
+        </div>
+        <div class="description">
+         <h2>description du vehicule</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, accusantium veritatis? Nemo fugit libero expedita tempore velit et vitae alias laborum, iusto modi magni cum, ipsum laudantium quod enim officia.</p>
+        </div>
+        <ul class="features">
+         <li>équipement 1</li>
+         <li>équipement 2</li> 
+        </ul>
+        <a href="#contact">Contactez-nous</a>
+        </div> 
+        <div class="car-display">
+          <div class="vehicule-details">
+           <h2>la marque et le modèle</h2>
+           <img src="image-pricipale.jpg" alt="Nom du véhicule">
+           <div class="info">
+             <h4>00000€</h4>
+             <p>année de mise en circulation :<span> 20xx</span></p>
+             <p>Kilométrage :<span> XX,XXX km</span></p>
+           </div>
+          </div>
+          <div class="image-gallery">
+            <img src="image1.jpg" alt="image 1">
+            <img src="image2.jpg" alt="image 2">
+          </div>
+          <div class="description">
+           <h2>description du vehicule</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, accusantium veritatis? Nemo fugit libero expedita tempore velit et vitae alias laborum, iusto modi magni cum, ipsum laudantium quod enim officia.</p>
+          </div>
+          <ul class="features">
+           <li>équipement 1</li>
+           <li>équipement 2</li> 
+          </ul>
+          <a href="#contact">Contactez-nous</a>
+       </div>
+      </div>
+   
+    </section>
+
+    <!--section services-->
+
+    <section id="services">
+        <h1 class="section_title"> Nos Services</h1>
+        <div class="list_services">
+            <div class="service">
+                <h3>L'entretien</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio eveniet vero, quod magnam repudiandae. Qui non harum voluptatum vel neque iusto, quia enim explicabo quibusdam, quae ut libero molestias!</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+                </div>  
+           <div class="service">
+                    <h3>Controle technique</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio eveniet vero, quod magnam repudiandae. Qui non harum voluptatum vel neque iusto, quia enim explicabo quibusdam, quae ut libero molestias!</p>
+                     <a href="#" class="read_more">Lire Plus</a>
+                </div>        
+           <div class="service">
+                        <h3>Dépannage</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio eveniet vero, quod magnam repudiandae. Qui non harum voluptatum vel neque iusto, quia enim explicabo quibusdam, quae ut libero molestias!</p>
+                         <a href="#" class="read_more">Lire Plus</a>
+               </div>
+        </div>             
+    </section>
+    
+   <!--section contact-->
+                  
+   <section id="contact">
+    <h1 class="section_title"> Contactez Nous</h1>
+     <div class="contact-container"> 
+        <div class="localisation">  <!--localisation-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92457.01789491103!2d1.3504414924832926!3d43.60067365871974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sen!2sfr!4v1686931641473!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+       <div class="horaires_table">      <!--horaires-->
+          <table>
+            <tr>
+              <th>Jour</th>
+              <th>Ouverture</th>
+              <th>Fermeture</th>
+            </tr>
+            <tr>
+              <td>Lundi</td>
+              <td>9:00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>Mardi</td>
+              <td>fermé</td>
+              <td>fermé</td>
+            </tr>
+            <tr>
+              <td>Mercredi</td>
+              <td>9:00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>Jeudi</td>
+              <td>9:00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>Vendredi</td>
+              <td>9:00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>Samedi</td>
+              <td>9:00</td>
+              <td>18:00</td>
+            </tr>
+            <tr>
+              <td>Dimanche</td>
+              <td>fermé</td>
+              <td>fermé</td>
+            </tr>
+          </table>
+         </div>
+        <div class="form_contact">  <!--fromulaire contact-->
+        <h3> Envoyez Un Message </h3>
+        <form action="" method="">
+          <input type="text" name="nom" placeholder="Nom" required>
+          <input type="text" name="prenom" placeholder="Prenom" required>
+          <input type="email" name="email" placeholder="Adresse Mail" required>
+          <input type="text" name="phone" placeholder="Numéro de Téléphone" required>
+          <input type="text" name="subject" placeholder="Objet" required>
+          <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <input type="submit" value="Envoyer">
+      </form>      
+        </div>
+      </div>    
+  </section> 
+
+    <!--section avis-->
+
+    <section id="review-section">
+      <h1 class="section_title">Vos Avis</h1>
+      <form class="review-form" id="reviewForm">
+          <input type="text" placeholder="Nom/Prénom" required>
+          <textarea placeholder="Votre Avis"></textarea>
+          <input type="submit" value="Envoyer">
+      </form>
+      <ul class="review-list" id="reviewList">
+          <li class="review">
+              <h5>Jean de Paris</h5>
+              <p>Très bon service!</p>
+          </li>
+      </ul>
+  </section>
+  
+    <footer>
+      <p>&copy;2023 GarageV.Parrot Alimatou Din.</p>
+    </footer>
+<script src="filtrer.js"></script>
+<script src="avis.js"></script>
+</body>
+</html>

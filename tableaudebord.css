@@ -1,0 +1,107 @@
+/*la police d'écriture google font*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5;
+    overflow: scroll;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    padding: 5px 16%;
+    height: 50px;
+    box-shadow: 0 0 15px 0 black;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 15px;
+    color: rgb(144, 144, 107);
+    font-weight: 300;
+    transition: 0.2s;
+}
+.menu li a:hover {
+    color: black;
+}
+.employee-form {
+    height: calc(100vh - 50px);
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 50px;
+    margin-bottom: 15rem;
+    box-shadow: 0 .100rem .5000rem -0.100rem rgba(0, 0, 0, 0.1);
+    background-color: rgb(249, 247, 247);
+    border-radius: 50px;
+    text-align: center; 
+}
+.employee-input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(249, 247, 247);
+    border-radius: 3px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.employee-button {
+    padding: 10px 15px;
+    background-color: rgb(249, 247, 247);
+    color:  rgb(212, 212, 201);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.employee-button:hover {
+    background-color: rgb(249, 247, 247);
+    box-shadow: 0 7px 20px black; 
+}
+.employee_table { 
+    width: 80%;  
+    margin: 0 auto;  
+    margin-bottom: 10rem;
+}
+.employee_table th {
+    background-color: black;
+    color:white;
+    padding: 1px 30px;
+}
+.employee_table td {
+    padding: 25px;
+}

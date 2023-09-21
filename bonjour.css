@@ -1,0 +1,42 @@
+/*la police d'écriture google font*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5;
+    overflow: scroll;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+.welcome-text {
+    text-align: center;
+    margin-top: 5rem;
+    color: rgb(144, 144, 107);
+}
+.lien-tableaudebord {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2rem;
+    color:  gray;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.lien-tableaudebord:hover {
+    color: black;
+}

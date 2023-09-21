@@ -1,0 +1,62 @@
+/*la police d'écriture google font*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5;
+    overflow: scroll;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+.login-form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 100px;
+    box-shadow: 0 .125rem .5625rem -0.125rem rgba(0, 0, 0, 0.1);
+    background-color: rgb(249, 247, 247);
+    border-radius: 50px;
+    text-align: center; 
+}
+.login-input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(249, 247, 247);
+    border-radius: 3px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.login-button {
+    padding: 10px 15px;
+    background-color: rgb(249, 247, 247);
+    color:  rgb(212, 212, 201);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.login-button:hover {
+    background-color: rgb(249, 247, 247);
+    box-shadow: 0 7px 20px black; 
+}

@@ -1,0 +1,452 @@
+/*la police d'écriture google font*/
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5;
+    overflow: scroll;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+
+/*L'entête*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    padding: 5px 16%;
+    height: 50px;
+    box-shadow: 0 0 15px 0 black;
+}
+header .logo p {
+    color: rgb(144, 144, 107);
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 15px;
+    color: rgb(144, 144, 107);
+    font-weight: 300;
+    transition: 0.2s;
+}
+.menu li a:hover {
+    color: black;
+}
+.login-button {
+   background-color: grey;
+    cursor: poi banter;
+    color:white;
+    padding: 5px 25px;
+}
+
+/*Acceuil*/
+
+#home {
+    height: calc(100vh - 50px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 20%;
+}
+
+/*Scrollbar CSS*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+/*Accueil*/
+
+#home .left {
+    width: 40%;
+}
+#home .left h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: rgb(144, 144, 107);
+}
+#home .left h1 span {
+    color: black;
+}
+#home .left p {
+    margin-bottom: 30px;
+    color: gray;
+    font-size: 13px;
+}
+#home .left a {
+    background-color: gray;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+}
+#home .left a:hover {
+    background-color: black;
+    box-shadow: 0 7px 20px black; 
+}
+#home .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .right img {
+    width: 100%;
+}
+
+/*Vehicules*/
+
+#cars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.section_title{
+    margin-bottom: 5rem;
+    color: gray;
+}
+.filters-container {
+    display: flex;
+    justify-content: space-between;  /* spacing between the sliders */
+}
+.range{
+    position: relative;
+    margin: 0 10px;
+    height: auto;
+    width: 300px;
+    text-align: center;
+    place-items: center;
+    border-radius: 0.5rem;
+    padding: 15px;
+    flex: 1; 
+    margin: 0 10px;    
+}
+.range h3 {
+    color: black;
+    margin-right: 0;
+    text-align: left; 
+}
+.range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.range .field input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow: 0 .125rem .5625rem -0.125rem;
+    cursor: pointer;
+}
+.field {
+    position: relative;
+}
+.slidervalue {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-10%); 
+    color: white;
+    font-size: 12px;
+}
+.slidervalue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: rgb(24, 82, 24);
+    border-radius: 100rem;
+    font-weight: 500;
+    top: -40px;
+    transform: translateX(-50%);
+    line-height: 50px;
+    z-index: 2;
+}
+.value-left {
+    position: relative;
+    left: -15px; 
+    bottom: 0; 
+    color: lightgreen;
+    font-size: 18px;
+    font-weight: 600;
+}
+.value-right {
+    position:relative;
+    right: -30px; 
+    bottom: 0; 
+    color: lightgreen;
+    font-size: 18px;
+    font-weight: 600;
+}
+.range .field input {
+   -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background-color:black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.car-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30%;
+}
+.car-display {
+    display: none;
+}
+
+.car-display {
+width: 25%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content:space-between;
+flex-direction: column;
+box-shadow: 0 .125rem .5625rem -0.125rem rgba(0, 0, 0, 0.1);
+padding: 30px;
+margin: 50px 0 50px;
+}
+.vehicule-details h2 {
+    color: white;
+    background: rgb(144, 144, 107);
+    border: none;
+    padding: 20px; 
+    font-size: 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.info h4 {
+    color: gray;
+}
+.info p {
+    color: rgb(0, 128, 70);
+}
+.info p span{
+    color: gray;
+}
+.description h2 {
+    color: white;
+    background:  rgb(144, 144, 107);
+    border: none;
+    padding: 2px 10px; 
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 7%;
+}
+.description p {
+    box-shadow: 0 .125rem .5625rem -0.125rem rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: gray;
+}
+.features li {
+    margin-top: 20%;
+    color: green;
+}
+.car-display a {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1px 25px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px 0 5px;
+}
+.car-display a:hover {
+    background-color: transparent;
+}
+
+/*Services*/
+
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.list_services {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30%;
+}
+.service {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 .125rem .5625rem -0.125rem rgba(0, 0, 0, 0.1); 
+    padding: 15px;
+    margin: 20px;
+}
+.service h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(144, 144, 107); 
+}
+.service p {
+    font-size: 12px;
+    color: gray;
+}
+.service a {
+    margin-top: 10px;
+    color: blue;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    font-size: 12px;
+}
+
+/*Contact*/
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+.localisation{
+    width: 100%;  
+    margin-bottom: 10rem;
+}
+.localisation iframe {
+    width: 50%;  /
+}
+.horaires_table { 
+    width: 80%;  
+    margin: 0 auto;  
+    margin-bottom: 10rem;
+}
+.horaires_table th {
+    background-color: black;
+    color:white;
+    padding: 1px 30px;
+}
+.horaires_table td {
+    padding: 25px;
+}
+.form_contact form {
+    width: 80%;  
+    margin: 0 auto;  
+    box-shadow: 0 .125rem .5625rem -0.125rem rgba(0, 0, 0, 0.1);
+    padding: 20px;  
+    background-color: white; 
+    margin-bottom: 10rem;
+}
+.form_contact form input, textarea {
+    border: 1px solid grey;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: 0;
+    font-size: 15px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+.form_contact form input:focus, .form_contact form textarea:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.form_contact form input[type="submit"] {
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form_contact form input[type="submit"]:hover {
+    background-color: transparent;
+    box-shadow: 0 7px 20px black; 
+}
+
+/*Avis*/
+
+#review-section { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.review-form input[type="text"]::placeholder {
+    border: 1px solid black;
+    padding: 5px;
+}
+.review-form input[type="text"], 
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+}
+.review-form input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-bottom: 10%;
+}
+.review-form input[type="submit"]:hover {
+    background-color: transparent;
+    box-shadow: 0 7px 20px black; 
+}
+.review-list {
+    list-style-type: none;
+}
+.review {
+    color: blue;
+}
+
